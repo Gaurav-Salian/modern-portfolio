@@ -82,6 +82,22 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        "scroll-down": {
+          "0%": {
+            transform: "translateY(-80%)", // Start from the initial position
+          },
+          "100%": {
+            transform: "translateY(20%)", // Move down by the full container height
+          },
+        },
+        "scroll-up": {
+          "0%": {
+            transform: "translateY(20%)", // Start from the initial position
+          },
+          "100%": {
+            transform: "translateY(-80%)", // Move up by the full container height
+          },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -148,6 +164,8 @@ const config = {
         },
       },
       animation: {
+        "scroll-down": "scroll-down 10s linear infinite",
+        "scroll-up": "scroll-up 10s linear infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",

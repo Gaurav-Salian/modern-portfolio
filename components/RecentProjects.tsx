@@ -4,24 +4,43 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import { useRef, useState } from "react";
+
+
 
 const RecentProjects = () => {
+
+  const clickCountRef = useRef(0);  // Using useRef to track click count
+
+  const handleClick = (e, link) => {
+    e.preventDefault(); // Prevent the default link behavior
+
+    clickCountRef.current += 1; // Increment the click count
+
+    if (clickCountRef.current === 2) {
+      // On second click, allow navigation
+      window.open(link, "_blank"); // Open the link in a new tab
+      clickCountRef.current = 0; // Reset click count after the second click
+    }
+  };
+  
   return (
     <div className="py-20">
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-12 mt-10">
         {projects.map((item) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
             <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
+              title={item.title}
+              href={item.link}
             >
+              
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
@@ -66,10 +85,16 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
+                <a
+                    href={item.link}  // The link is passed as 'item.link'
+                    onClick={(e) => handleClick(e, item.link)} // Handle the click to track and navigate
+                    className="flex items-center"
+                  >
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                     Check Live Site
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  </a>
                 </div>
               </div>
             </PinContainer>

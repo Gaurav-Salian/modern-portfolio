@@ -54,8 +54,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["ReactJS", "Express", "MongoDB", "Git", "Python", "Docker", "Bootstrap"];
+  const rightLists = ["JavaScript", "NextJS", "SQL", "NodeJS", "React Native", "Taiwind", "PHP" ];
 
   const [copied, setCopied] = useState(false);
 
@@ -143,33 +143,65 @@ export const BentoGridItem = ({
 
           {/* Tech stack list div */}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                {leftLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-              </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-                {rightLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
+            // <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            //   {/* tech stack lists */}
+            //   <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+            //     {leftLists.map((item, i) => (
+            //       <span
+            //         key={i}
+            //         className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+            //         lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+            //       >
+            //         {item}
+            //       </span>
+            //     ))}
+            //     <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+            //   </div>
+            //   <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+            //     <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+            //     {rightLists.map((item, i) => (
+            //       <span
+            //         key={i}
+            //         className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+            //         lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+            //       >
+            //         {item}
+            //       </span>
+            //     ))}
+            //   </div>
+            // </div>
+
+
+<div className="flex gap-1 h-full lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+  {/* Left list - Scroll up */}
+  <div className="flex flex-col gap-3 md:gap-3 lg:gap-8 overflow-hidden relative h-[38rem] animate-scroll-up">
+    {leftLists.map((item, i) => (
+      <span
+        key={i}
+        className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+        lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+      >
+        {item}
+      </span>
+    ))}
+    {/* <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]"></span> */}
+  </div>
+  
+  {/* Right list - Scroll down */}
+  <div className="flex flex-col padding gap-3 md:gap-3 lg:gap-8 overflow-hidden relative h-[38rem] animate-scroll-down">
+    {rightLists.map((item, i) => (
+      <span
+        key={i}
+        className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+        lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+      >
+        {item}
+      </span>
+    ))}
+  </div>
+</div>
+
+
           )}
           {id === 6 && (
             <div className="mt-5 relative">
