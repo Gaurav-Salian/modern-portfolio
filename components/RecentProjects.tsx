@@ -12,7 +12,7 @@ const RecentProjects = () => {
 
   const clickCountRef = useRef(0);  // Using useRef to track click count
 
-  const handleClick = (e, link) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, link: string) => {
     e.preventDefault(); // Prevent the default link behavior
 
     clickCountRef.current += 1; // Increment the click count
