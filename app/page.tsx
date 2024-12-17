@@ -1,4 +1,4 @@
-// import Image from "next/image";
+import Image from "next/image";
 import Clients from "@/components/Client";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
@@ -24,6 +24,6 @@ export default function Home() {
         <Approach />
         <Footer />
       </div>
-    </main> 
+    </main>
   );
 }
