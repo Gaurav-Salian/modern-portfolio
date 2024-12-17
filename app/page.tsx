@@ -11,13 +11,15 @@ const Clients = dynamic(() => import("@/components/Client"), { ssr: false });
 const Experience = dynamic(() => import("@/components/Experience"), { ssr: false });
 const Approach = dynamic(() => import("@/components/Approach"), { ssr: false });
 const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
+import { FloatingNav } from "@/components/ui/FloatingNavbar";
+
 
 export default function Home() {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-clip mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         {/* Floating Navigation */}
-        {/* <FloatingNav navItems={navItems} /> */}
+        <FloatingNav navItems={navItems} />
         {/* Hero Section */}
         <Hero />
         {/* Grid Section */}
