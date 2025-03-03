@@ -74,7 +74,7 @@ export const projects = [
     id: 1,
     title: "First portfolio site",
     des: "My very first portfolio website",
-    img: "/p1.svg",
+    img: "/fpfo.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://gaurav-salian.github.io/gaurav-portfolio",
   },
@@ -82,31 +82,31 @@ export const projects = [
     id: 2,
     title: "Zentry Game Website Simple UI/UX Design",
     des: "clone of Zentry Website.",
-    img: "/p2.svg",
+    img: "/zntry.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://zentryclone-two.vercel.app/",
   },
   {
     id: 3,
-    title: "Restraunt Website",
-    des: "A Website for Restraunt.",
-    img: "/p3.svg",
+    title: "Catring Website",
+    des: "A Simple Yet Interactive Website For a Catering/ Restraunt",
+    img: "/catr.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "https://gaurav-salian.github.io/catering/",
   },
   {
     id: 4,
     title: "Space Asteriods Game",
-    des: "Space invaders Game destroy astroids and make a highscore! Made using HTML, CSS and JS",
-    img: "/p4.svg",
+    des: "Space invaders Game destroy astroids and make a highscore!",
+    img: "/spce.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://gaurav-salian.github.io/space_asteroids_web/",
   },
   {
     id: 5,
     title: "Metal Fish Game",
-    des: "Avoid the floating obsticles and keep moving forward made using HTML,CSS and JS",
-    img: "/p4.svg",
+    des: "Modern Taken on the basic Flappy Bird game controls",
+    img: "/Retro.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://gaurav-salian.github.io/better-flappy-bird/",
   },
@@ -114,7 +114,7 @@ export const projects = [
     id: 6,
     title: "Flappy Bird Game",
     des: "The Classic Flappy Bird",
-    img: "/p4.svg",
+    img: "flapy.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://gaurav-salian.github.io/flappy-bird/",
   },
@@ -122,15 +122,15 @@ export const projects = [
     id: 5,
     title: "Doodle Jump Game",
     des: "Classic Doodle jump Game",
-    img: "/p4.svg",
+    img: "/jmp.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://gaurav-salian.github.io/doodle-jump/",
   },
   {
     id: 5,
     title: "Pong Game for PC",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
+    des: "The Classic Pong Game available for PC",
+    img: "/pong.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://gaurav-salian.github.io/pong-game/",
   },
@@ -147,13 +147,13 @@ export const testimonials = [
     quote:
     "Duis labore cupidatat excepteur labore exercitation excepteur esse.",
     name: "Michael Johnson",
-    title: "Director of ABC Technologies",
+    title: "Director of XYZ Technologies",
   },
   {
     quote:
     "Sint minim consequat nostrud anim proident dolore.",
     name: "Michael Johnson",
-    title: "Director of ABC Technologies",
+    title: "Director of QWE Technologies",
   },
 
 ];
@@ -226,13 +226,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link:"https://github.com/Gaurav-Salian"
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/insta.svg",
+    link:"https://www.instagram.com/_bharat_ka_gaurav_/"
   },
   {
     id: 3,
     img: "/link.svg",
+    link:"https://www.linkedin.com/in/gaurav-salian"
   },
 ];
