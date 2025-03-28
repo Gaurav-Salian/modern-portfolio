@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script async src="https://script.adquake.com/js/adquake.js" adquake-key="89KGmiWFekSU8CXyFLeWpw=="></script>
+        <meta name="monetag" content="4d7a84063c096a5a381e6418d3b3d560">
         <link rel="icon" href="/jsm-logo.png" sizes="any" />
       </head>
       <body className={inter.className}>
@@ -32,7 +32,7 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
       </body>
-      <script async src="https://script.adquake.com/js/adquake.js" adquake-key="89KGmiWFekSU8CXyFLeWpw=="></script>
+      <meta name="monetag" content="4d7a84063c096a5a381e6418d3b3d560">
     </html>
   );
 }
