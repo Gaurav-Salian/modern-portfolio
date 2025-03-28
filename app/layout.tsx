@@ -19,7 +19,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="monetag" content="4d7a84063c096a5a381e6418d3b3d560">
         <link rel="icon" href="/jsm-logo.png" sizes="any" />
       </head>
       <body className={inter.className}>
