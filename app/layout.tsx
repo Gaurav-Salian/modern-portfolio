@@ -32,7 +32,6 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
       </body>
-      <meta name="monetag" content="4d7a84063c096a5a381e6418d3b3d560">
     </html>
   );
 }
